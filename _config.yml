@@ -1,0 +1,26 @@
+# Dependencies
+markdown:	redcarpet
+pygments:	true
+
+# Permalinks
+permalink:	/blog/:title
+
+# Setup
+title:		SummaSmiff
+tagline:	'blog'
+description:	'My personal blog.'
+url:		http://summasmiff.com
+
+author:
+  name:	'Summer Smith'
+  url:	http://summasmiff.com
+
+paginate:	6
+
+# Custom vars
+icon: /assets/images/icon.gif
+cover: /assets/images/cover.gif
+version:	1.0.0
+# github:
+#   repo:	https://github.com/camporez/camporez.github.io
+copyright: <p class="copyright">&copy;2015, <a href="http://summasmiff.com" target="_blank">summasmiff</a>. <a href="http://creativecommons.org/licenses/by-nc/2.5/br/" target="_blank">Some rights reserved</a>.</p>

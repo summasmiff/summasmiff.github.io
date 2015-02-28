@@ -1,0 +1,5 @@
+@import url(default.css);
+
+#bg-video, #bg-video-pattern {
+	display: none;
+}

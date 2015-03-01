@@ -6,7 +6,7 @@ title: Home
 <header class="{% if page.dark %}dark{% else %}clean{% endif %}" style="background-image: url({% if page.image %}{{ page.image }}{% else %}{{ site.cover }}{% endif %});{% if page.background_position %} background-position: {{ page.background_position }};{% endif %}height: 100%;">
 	{% include top.html %}
 	<div id="home-title">
-		<a href="{{ site.url }}">
+		<a href="{{ site.posts.first.url }}">
 			<img src="http://media.giphy.com/media/lm79UYhHtMhDq/giphy.gif" class="site-icon">
 		</a>
 	</div>

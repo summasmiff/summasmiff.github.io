@@ -271,7 +271,7 @@ blockquote p {
 }
 
 .message {
-	border-left: 10px solid #F66A81;
+	text-align: center;
 }
 
 code, pre {

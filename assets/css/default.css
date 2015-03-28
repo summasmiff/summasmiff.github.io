@@ -521,3 +521,18 @@ pre code {
 	font-size: 16px;
 	color: #999;
 }
+
+iframe {
+	position: absolute;
+	z-index: 0;
+}
+
+.over {
+	display: block;
+	font-size: 40px;
+	padding-top: 150px;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+  z-index: 2;
+}

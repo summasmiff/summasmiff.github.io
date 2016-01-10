@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A new Chrome extension: GitHub Report Card
+title: A new Chrome extension, GitHub Report Card
 quote: a simple productivity tool
 image: false
 video: false

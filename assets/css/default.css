@@ -1,14 +1,24 @@
-html, body, div, span, applet, object, iframe, caption, p {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+caption,
+p {
 	margin: 0 0 0 0;
 	border: 0 0 0 0;
 	font: inherit;
 	color: inherit;
 }
 
-html, body {
+html,
+body {
 	width: 100%;
 	height: 100%;
 	position: relative;
+	background-color: black;
 }
 
 header {
@@ -16,16 +26,18 @@ header {
 	position: relative;
 }
 
-header, footer {
+header,
+footer {
 	position: relative;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	background-attachment: scroll;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Space Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-header a, footer a {
+header a,
+footer a {
 	transition-duration: .25s;
 	text-decoration: none;
 }
@@ -47,7 +59,7 @@ a {
 }
 
 h1 {
-	margin-top: 30px;
+	margin-top: 10px;
 	font-size: 36px;
 }
 
@@ -66,21 +78,26 @@ img {
 	max-width: 100%;
 }
 
+img.hero {
+	width: 100%;
+	height: auto;
+}
+
 #post-info {
 	font-size: 14px;
-	width: 700px;
+	width: 800px;
 	left: 50%;
-	margin-left: -350px;
-	bottom: 100px;
-	position: absolute;
+	margin-left: -400px;
 	z-index: 2;
+	position: absolute;
+	text-align: center;
 }
 
 #post-info h1 {
+	margin-top: 20px;
 	font-weight: bold;
 	font-size: 44px;
 	line-height: 44px;
-	margin: 15px 0px;
 }
 
 #post-info h2 {
@@ -159,7 +176,8 @@ img.site-icon-page {
 	z-index: 2;
 }
 
-#nav-icon a, #nav-icon a span {
+#nav-icon a,
+#nav-icon a span {
 	text-decoration: none;
 	font-size: 48px;
 	text-align: center;
@@ -167,24 +185,25 @@ img.site-icon-page {
 }
 
 #article {
-	font-family: "PT Serif", Georgia, "Times New Roman", serif;
 	width: 700px;
 	padding: 50px 0px;
 	left: 50%;
 	margin-left: -350px;
 	font-weight: 400;
 	letter-spacing: -0.4px;
-	font-size:20px;
+	font-size: 20px;
 	color: #313131;
 	line-height: 1.5;
 	position: relative;
 }
 
-#article a:hover, .copyright a:hover {
+#article a:hover,
+.copyright a:hover {
 	text-decoration: underline;
 }
 
-a.site-title:hover, .copyright a:hover {
+a.site-title:hover,
+.copyright a:hover {
 	text-decoration: underline;
 }
 
@@ -217,12 +236,14 @@ table {
 	border-collapse: collapse;
 }
 
-td, th {
+td,
+th {
 	padding: .25rem .5rem;
 	border: 1px solid #e5e5e5;
 }
 
-tbody tr:nth-child(odd) td, tbody tr:nth-child(odd) th {
+tbody tr:nth-child(odd) td,
+tbody tr:nth-child(odd) th {
 	background-color: #f9f9f9;
 }
 
@@ -254,7 +275,9 @@ abbr[title] {
 	border-bottom: 1px dotted #e5e5e5;
 }
 
-blockquote, pre, .message {
+blockquote,
+pre,
+.message {
 	padding: 10px 18px;
 	margin: 0px 0px 30px -20px;
 	margin-top: inherit;
@@ -274,7 +297,8 @@ blockquote p {
 	text-align: center;
 }
 
-code, pre {
+code,
+pre {
 	font-family: Menlo, Monaco, "Courier New", monospace;
 	background-color: #f9f9f9;
 }
@@ -315,14 +339,14 @@ pre code {
 
 .clean {
 	color: #eee;
-	background-color: #888;
 }
 
 .clean a {
 	color: #eee;
 }
 
-.dark, .dark a {
+.dark,
+.dark a {
 	color: #555;
 }
 
@@ -341,13 +365,15 @@ pre code {
 	margin: 0 5px 0 5px;
 	padding: 0;
 }
+
 .social-links a span {
 	font-size: 24px;
 	height: 24px;
 	width: 24px;
 }
 
-.social-links a:hover, .menu a:hover {
+.social-links a:hover,
+.menu a:hover {
 	opacity: 1;
 }
 
@@ -367,14 +393,8 @@ pre code {
 	transition-duration: .5s;
 }
 
-.menu:hover, .menu:active  {
-	background-color: #777;
-}
-
 .menu-content {
-	background-color: #777;
 	width: auto;
-	top: 40px;
 	left: 14px;
 	padding-top: 5px;
 	padding-bottom: 2px;
@@ -382,7 +402,6 @@ pre code {
 	padding-right: 12px;
 	border-radius: 0px 3px 3px 3px;
 	position: fixed;
-	text-align: center;
 	z-index: 1;
 }
 
@@ -405,15 +424,15 @@ pre code {
 	opacity: 1;
 }
 
-.menu + input {
+.menu+input {
 	display: none;
 }
 
-.menu + input + * {
+.menu+input+* {
 	display: none;
 }
 
-.menu + input:checked + * {
+.menu+input:checked+* {
 	display: block;
 }
 
@@ -424,7 +443,6 @@ pre code {
 	margin-left: -350px;
 	margin-top: 30px;
 	text-align: center;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -438,7 +456,8 @@ pre code {
 	color: #888;
 }
 
-.older-posts, .newer-posts {
+.older-posts,
+.newer-posts {
 	position: absolute;
 	padding: 0 15px;
 }
@@ -459,7 +478,8 @@ pre code {
 	right: -15px;
 }
 
-.older-posts:hover, .newer-posts:hover {
+.older-posts:hover,
+.newer-posts:hover {
 	color: #2a7ead;
 	border-color: #00BDB8;
 }
@@ -477,19 +497,29 @@ pre code {
 	text-decoration: none;
 }
 
+.post-img {
+	width: 125px;
+	height: 125px;
+	max-width: none;
+	transition: width 0.3s, height 0.3s;
+}
+
+.post-img:hover {
+	width: 150px;
+	height: 150px;
+}
+
 #post-list {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	width: 700px;
 	top: 50px;
 	left: 50%;
-	margin-left: -350px;
+	transform: translateX(-50%);
 	padding-bottom: 80px;
-	font-weight: 400;
-	letter-spacing: -0.4px;
-	font-size:20px;
-	color: #313131;
-	line-height: 1.5;
+	color: white;
 	position: relative;
+	display: grid;
+	grid-template-columns: repeat(5, auto);
+	gap: 30px;
+	width: 625px;
 }
 
 #post-list h1 {
@@ -514,7 +544,6 @@ pre code {
 .post-description {
 	color: #777;
 	font-size: 20px;
-	font-family: "PT Serif", Georgia, "Times New Roman", serif;
 }
 
 .post-date {
@@ -534,5 +563,5 @@ iframe {
 	position: absolute;
 	text-align: center;
 	width: 100%;
-  z-index: 2;
+	z-index: 2;
 }

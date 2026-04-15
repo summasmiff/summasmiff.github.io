@@ -1,8 +1,11 @@
 ## local dev
-`gem install jekyll`
-`jekyll build --watch`
+`gem install bundler`
+`bundle install`
+`bundle exec jekyll serve --livereload`
 
-Site will be built to `/_site`.
+Site will be at http://localhost:4000/
 
-`jekyll serve`
-Site will be at http://127.0.0.1:4000
+## deploying
+`jekyll build`
+
+Static site will be built to `/_site`.

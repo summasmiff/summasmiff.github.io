@@ -1,9 +1,11 @@
 ## local dev
-`gem install bundler`
-`bundle install`
-`bundle exec jekyll serve --livereload`
+```
+gem install bundler
+bundle install
+bundle exec jekyll serve --livereload
+```
 
-Site will be at http://localhost:4000/
+Site will be at http://127.0.0.1:4000/
 
 ## deploying
 `jekyll build`

@@ -2,18 +2,19 @@
 layout: default
 ---
 
-<header class="clean" <div id="home-title">
-	<a href="{{ site.url }}">
-		<img src="{{ site.icon }}" class="site-icon-page">
-	</a>
-	</div>
-	<div id="post-info" style="bottom: 30px; text-align: center; line-height: 45px;">
-		<h1>{{ page.title }}</h1>
-	</div>
+<header class="clean">
+	<h2>
+		{{ page.title}}
+		<hr />
+	</h2>
+
 </header>
 <div id="article">
 	{{ content }}
 </div>
-<footer class="clean" style="background-image: url({{ site.cover }}); background-position: bottom; height: 60px;">
+<footer class="clean">
+	<a class="home-link" href="{{ site.url }}">
+		<img src="{{ site.icon }}" />
+	</a>
 	{{ site.copyright }}
 </footer>

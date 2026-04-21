@@ -8,7 +8,7 @@ permalink: /portfolio/:year/:month/:day/:title
 
 # Setup
 title:		Summer Smith
-tagline:	'blog'
+tagline:	'portfolio'
 description:	'The portfolio of Summer Smith'
 url:		http://summasmiff.github.io
 

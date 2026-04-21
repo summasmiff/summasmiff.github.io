@@ -23,9 +23,8 @@ body {
 }
 
 header {
-	width: calc(100% - 300px);
+	width: 100%;
 	position: relative;
-	margin-left: 300px;
 }
 
 header,
@@ -94,7 +93,7 @@ img.hero {
 	font-size: 14px;
 	width: 800px;
 	left: 50%;
-	margin-left: -400px;
+	margin-left: -300px;
 	z-index: 2;
 	position: absolute;
 	text-align: center;
@@ -427,7 +426,7 @@ header.clean {
 	padding-right: 12px;
 	border-radius: 0px 3px 3px 3px;
 	position: fixed;
-	z-index: 1;
+	z-index: 1000;
 }
 
 .menu-content a {
@@ -462,11 +461,9 @@ header.clean {
 }
 
 .pagination {
+	width: 100%;
+	margin: 30px auto 0;
 	position: relative;
-	width: 700px;
-	left: 50%;
-	margin-left: -350px;
-	margin-top: 30px;
 	text-align: center;
 	font-size: 14px;
 	text-transform: uppercase;

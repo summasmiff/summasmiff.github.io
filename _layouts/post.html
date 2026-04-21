@@ -4,6 +4,7 @@ article: true
 ---
 
 <header class="clean" style="height: 100%;">
+	{% include top.html %}
 	<div id="post-info">
 
 		<div class="hero-container">
@@ -28,8 +29,6 @@ article: true
 		{% if page.quote %}
 		<h2>{{ page.quote }}</h2>
 		{% endif %}
-
-		<h3 style="text-align: right;"><a href="{{ site.url }}">Home</a></h3>
 
 		<br />
 		<a class="site-title" href="{{ site.url }}"><img src="{{ site.icon }}" class="site-icon-small">{{ site.title }}</a>

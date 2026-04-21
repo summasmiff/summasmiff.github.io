@@ -57,7 +57,7 @@
 	}
 
 	#post-list {
-		max-width: 280px;
+		width: 280px;
 		grid-template-columns: repeat(2, 1fr);
 		gap: 15px;
 		margin: 35px auto;

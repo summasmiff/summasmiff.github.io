@@ -1,10 +1,7 @@
 ---
 layout: page
-title: Writing
+title: Once again I am plotting.
 ---
-
-### Once again I am plotting.
-
 I'm plotting again. That is to say: I am using my AxiDraw pen plotter to make drawings of things I generate using Clojure. I've been creating generative art for some time now, but only recently started working in Clojure. TL;DR: it's great!
 
 This is something I've done more or less as long as I've used computers, starting way back in the 90s when I was a pre-teen writing my Geocities fanpages. But I really started getting into it once I learned about the AxiDraw.

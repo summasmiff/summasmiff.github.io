@@ -23,8 +23,9 @@ body {
 }
 
 header {
-	width: 100%;
+	width: calc(100% - 300px);
 	position: relative;
+	margin-left: 300px;
 }
 
 header,
@@ -43,8 +44,9 @@ footer a {
 }
 
 footer {
-	width: 100%;
+	width: calc(100% - 300px);
 	margin-top: 50px;
+	margin-left: 300px;
 }
 
 p {
@@ -212,19 +214,25 @@ img.site-icon-page {
 }
 
 #article {
-	width: 80%;
+	width: calc(95% - 350px);
 	padding: 20px 0px;
-	margin: 0 auto;
+	margin: 0;
+	margin-left: 350px;
 	font-weight: 400;
 	letter-spacing: -0.4px;
 	font-size: 20px;
 	line-height: 1.5;
 	position: relative;
+	color: white;
 }
 
 #article a:hover,
 .copyright a:hover {
 	text-decoration: underline;
+}
+
+#article h2 {
+	margin: 0;
 }
 
 a.site-title:hover,
@@ -286,18 +294,6 @@ hr {
 	border: 0;
 	border-top: 1px solid #eee;
 	border-bottom: 1px solid #fff;
-}
-
-abbr {
-	font-size: 85%;
-	font-weight: bold;
-	color: #555;
-	text-transform: uppercase;
-}
-
-abbr[title] {
-	cursor: help;
-	border-bottom: 1px dotted #e5e5e5;
 }
 
 blockquote,
@@ -560,12 +556,9 @@ header.clean {
 }
 
 #post-list {
-	top: 50px;
-	left: 50%;
-	transform: translateX(-50%);
+	margin: 50px auto 0;
 	padding-bottom: 80px;
 	color: white;
-	position: relative;
 	display: grid;
 	grid-template-columns: repeat(5, auto);
 	gap: 30px;

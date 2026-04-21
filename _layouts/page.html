@@ -1,15 +1,14 @@
 ---
 layout: default
 ---
-
 <header class="clean">
-	<h2>
-		{{ page.title}}
-		<hr />
-	</h2>
-
+	{% include top.html %}
 </header>
 <div id="article">
+	<h2>
+		{{ page.title }}
+		<hr />
+	</h2>
 	{{ content }}
 </div>
 <footer class="clean">

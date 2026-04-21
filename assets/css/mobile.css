@@ -57,9 +57,11 @@
 	}
 
 	#post-list {
-		grid-template-columns: repeat(2, auto);
-		gap: 30px;
-		width: 280px;
+		max-width: 280px;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 15px;
+		margin: 35px auto;
+		box-sizing: border-box;
 	}
 
 	.hero-container {
@@ -68,6 +70,18 @@
 
 	header.clean {
 		height: auto;
+		margin-left: 0;
+		width: 95%
+	}
+
+	footer {
+		margin-left: 0;
+		width: 95%
+	}
+
+	#article {
+		margin: 0 15px !important;
+		width: 95% !important;
 	}
 
 	#post-info {

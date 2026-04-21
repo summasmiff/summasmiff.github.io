@@ -141,6 +141,15 @@ img.exhibition {
 	margin-top: 50px;
 }
 
+img.full-width {
+	width: 95%;
+	height: 50vh;
+	object-fit: cover;
+	object-position: 75% 25%;
+	margin-right: 20px;
+	margin-top: 50px;
+}
+
 .home-link {
 	display: block;
 	width: 100px;

@@ -8,7 +8,7 @@ article: true
 
 		<div class="hero-container">
 			{% if page.next %}
-			<a href="{{ page.next.url }}" class="nav-arrow next">&#9664;</a>
+			<a href="{{ page.next.url }}" class="nav-arrow next">&#9668;&#xFE0E;</a>
 			{% else %}
 			<div class="nav-arrow-placeholder"></div>
 			{% endif %}
@@ -18,7 +18,7 @@ article: true
 			{% endif %}
 
 			{% if page.previous %}
-			<a href="{{ page.previous.url }}" class="nav-arrow prev">&#9654;</a>
+			<a href="{{ page.previous.url }}" class="nav-arrow prev">&#9658;&#xFE0E;</a>
 			{% else %}
 			<div class="nav-arrow-placeholder"></div>
 			{% endif %}

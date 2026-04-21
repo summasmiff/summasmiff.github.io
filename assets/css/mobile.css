@@ -55,4 +55,10 @@
 	.menu-content.open {
 		display: block;
 	}
+
+	#post-list {
+		grid-template-columns: repeat(2, auto);
+		gap: 30px;
+		width: 280px;
+	}
 }

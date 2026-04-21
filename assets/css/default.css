@@ -155,7 +155,7 @@ img.full-width {
 .home-link {
 	display: block;
 	width: 100px;
-	margin: 0 auto;
+	margin: 20px auto;
 }
 
 img.home-link {
@@ -513,7 +513,7 @@ header.clean {
 	color: inherit;
 	font-size: 14px;
 	text-transform: uppercase;
-	right: 20px;
+	right: 10px;
 	bottom: 10px;
 	position: absolute;
 }

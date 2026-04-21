@@ -111,4 +111,12 @@
 	img.hero {
 		max-height: 40vh;
 	}
+
+	img.exhibition {
+		width: 90%;
+		height: 25vh;
+		object-fit: cover;
+		object-position: 75% 25%;
+		margin: 15px;
+	}
 }

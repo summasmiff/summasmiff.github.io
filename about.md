@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Summer Smith
+title: About the Artist
 ---
 
 <div class="message">

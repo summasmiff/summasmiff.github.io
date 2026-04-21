@@ -1,5 +1,58 @@
 @import url(default.css);
 
-#bg-video, #bg-video-pattern {
+#bg-video,
+#bg-video-pattern {
 	display: none;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+	display: none;
+	flex-direction: column;
+	cursor: pointer;
+	background: none;
+	border: none;
+	padding: 10px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: 1000;
+}
+
+.bar {
+	width: 25px;
+	height: 3px;
+	background-color: white;
+	margin: 3px 0;
+	transition: 0.3s;
+}
+
+.menu-content {
+	display: block;
+}
+
+.menu-content.collapsed {
+	display: none;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+	.hamburger {
+		display: flex;
+	}
+
+	.menu-content {
+		display: none;
+		position: absolute;
+		top: 60px;
+		left: 0;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.75);
+		padding: 20px;
+		box-sizing: border-box;
+	}
+
+	.menu-content.open {
+		display: block;
+	}
 }

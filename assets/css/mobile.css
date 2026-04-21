@@ -61,4 +61,40 @@
 		gap: 30px;
 		width: 280px;
 	}
+
+	.hero-container {
+		flex-direction: column;
+	}
+
+	header.clean {
+		height: auto;
+	}
+
+	#post-info {
+		position: relative;
+		width: 100%;
+		margin-left: 0;
+		left: 0;
+		padding: 0 20px;
+		box-sizing: border-box;
+	}
+
+	#post-info h1 {
+		font-size: 28px;
+		line-height: 28px;
+	}
+
+	#post-info h2 {
+		font-size: 18px;
+		line-height: 18px;
+		text-align: center;
+	}
+
+	#post-info h3 {
+		text-align: center;
+	}
+
+	img.hero {
+		max-height: 40vh;
+	}
 }

@@ -6,9 +6,23 @@ article: true
 <header class="clean" style="height: 100%;">
 	<div id="post-info">
 
-		{% if page.image %}
-		<img class="hero" src="{{ page.image }}" />
-		{% endif %}
+		<div class="hero-container">
+			{% if page.next %}
+			<a href="{{ page.next.url }}" class="nav-arrow next">&#9664;</a>
+			{% else %}
+			<div class="nav-arrow-placeholder"></div>
+			{% endif %}
+
+			{% if page.image %}
+			<img class="hero" src="{{ page.image }}" />
+			{% endif %}
+
+			{% if page.previous %}
+			<a href="{{ page.previous.url }}" class="nav-arrow prev">&#9654;</a>
+			{% else %}
+			<div class="nav-arrow-placeholder"></div>
+			{% endif %}
+		</div>
 
 		<h1>{{ page.title }}</h1>
 		{% if page.quote %}

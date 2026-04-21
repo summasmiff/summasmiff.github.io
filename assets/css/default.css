@@ -529,6 +529,23 @@ header.clean {
 	object-position: center;
 }
 
+.post-navigation {
+	text-align: center;
+	margin: 20px 0;
+}
+
+.nav-arrow {
+	display: inline-block;
+	margin: 0 10px;
+	font-size: 96px;
+	text-decoration: none;
+	transition: color 0.25s;
+}
+
+.nav-arrow:hover {
+	color: #00BDB8;
+}
+
 #post-list {
 	top: 50px;
 	left: 50%;
@@ -584,4 +601,29 @@ iframe {
 	text-align: center;
 	width: 100%;
 	z-index: 2;
+}
+
+.hero-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	margin-bottom: 20px;
+}
+
+.nav-arrow {
+	font-size: 32px;
+	color: #2a7ead;
+	text-decoration: none;
+	transition: color 0.25s;
+	cursor: pointer;
+}
+
+.nav-arrow:hover {
+	color: #00BDB8;
+}
+
+.nav-arrow-placeholder {
+	width: 32px;
+	height: 32px;
 }

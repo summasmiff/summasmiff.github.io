@@ -17,10 +17,13 @@
 	<meta property="og:site_name" content="{{ site.title }}" />{% endif %}
 	<title>{% if page.title == "Home" %}{{ site.title }} &middot; {{ site.tagline }}{% else %}{{ page.title }} &middot; {{
 		site.title }}{% endif %}</title>
+	<link rel="preconnect" href="https://googleapis.com">
+	<link rel="preconnect" href="https://gstatic.com" crossorigin>
 	<link href="/assets/css/default.css" type="text/css" rel="stylesheet" />
 	<link href="/assets/css/genericons.css" type="text/css" rel="stylesheet" />
 	<link href="/assets/css/syntax.css" type="text/css" rel="stylesheet" />
 	<link href="/assets/css/mobile.css" type="text/css" rel="stylesheet" />
+	<link href="https://googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400">
 	<link rel="apple-touch-icon" href="{{ site.url }}{{ site.icon }}">
 	<link rel="shortcut icon" href="{{ site.url }}/assets/images/favicon.ico">

@@ -11,7 +11,15 @@ p {
 	border: 0 0 0 0;
 	font: inherit;
 	color: inherit;
-	font-family: "Space Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: 'Inter', sans-serif;
+	font-weight: 100;
+	/* Plotter-Aesthetic Tuning */
+	letter-spacing: 0.04em;
+	line-height: 1.4;
+	/* Font Smoothing */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
 }
 
 html,
@@ -101,7 +109,6 @@ img.hero {
 
 #post-info h1 {
 	margin-top: 20px;
-	font-weight: bold;
 	font-size: 44px;
 	line-height: 44px;
 }
@@ -112,7 +119,6 @@ img.hero {
 	font-size: 24px;
 	line-height: 24px;
 	text-align: right;
-	font-weight: lighter;
 	margin: 15px 0px;
 }
 
@@ -217,7 +223,6 @@ img.site-icon-page {
 	padding: 20px 0px;
 	margin: 0;
 	margin-left: 350px;
-	font-weight: 400;
 	letter-spacing: -0.4px;
 	font-size: 20px;
 	line-height: 1.5;
@@ -277,10 +282,6 @@ th {
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
 	background-color: #f9f9f9;
-}
-
-dt {
-	font-weight: bold;
 }
 
 dd {
@@ -375,6 +376,20 @@ header.clean {
 	color: #555;
 }
 
+.plotter-text {
+	font-family: 'Inter', sans-serif;
+	font-weight: 100;
+
+	/* Plotter-Aesthetic Tuning */
+	letter-spacing: 0.04em;
+	line-height: 1.4;
+
+	/* Font Smoothing */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+
 .social-links {
 	width: auto;
 	top: 20px;
@@ -432,7 +447,6 @@ header.clean {
 .menu-content a {
 	text-transform: uppercase;
 	font-size: 15px;
-	font-weight: bold;
 	line-height: 26px;
 }
 
@@ -468,7 +482,6 @@ header.clean {
 	font-size: 14px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	font-weight: 300;
 	text-decoration: none;
 	color: #888;
 }
@@ -563,7 +576,6 @@ header.clean {
 }
 
 #post-list h1 {
-	font-weight: bold;
 	font-size: 40px;
 	line-height: 44px;
 	margin-top: 8px;

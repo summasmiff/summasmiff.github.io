@@ -142,7 +142,7 @@ img.hero {
 img.exhibition {
 	width: 45%;
 	height: 50vh;
-	object-fit: cover;
+	object-fit: contain;
 	object-position: 75% 25%;
 	margin-right: 20px;
 	margin-top: 50px;

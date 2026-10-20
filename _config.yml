@@ -3,20 +3,36 @@ markdown:	kramdown
 highlighter: pygments
 plugins: [jekyll-paginate]
 
-# Permalinks
-permalink: /portfolio/:year/:month/:day/:title
-
 # Setup
-title:		Summer Smith
-tagline:	'portfolio'
-description:	'The portfolio of Summer Smith'
-url:		http://summasmiff.github.io
+title: Summer Smith
+tagline: 'Summer Smith'
+description: 'Aesthetic software engineering'
+url: http://summasmiff.github.io
 
 author:
-  name:	'Summer Smith'
-  url:	http://summasmiff.github.io
+  name: 'Summer Smith'
+  url: http://summasmiff.github.io
 
 paginate:	20
+
+collections:
+  artworks:
+    output: true
+    permalink: /:collection/:year/:month/:day/:title/
+    layout: artwork
+
+defaults:
+  - scope:
+      path: ""
+      type: "artworks"
+    values:
+      layout: "artwork"
+
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
 
 # Custom vars
 icon: /assets/images/icon.gif

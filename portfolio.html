@@ -1,0 +1,18 @@
+---
+layout: fullscreen
+title: Home
+---
+
+{% include sidebar.html %}
+<div id="post-list">
+  {% for artwork in site.artworks reversed %}
+  <div>
+    <a href="{{ artwork.url }}"><img class="portfolio-img"
+        src="{{ artwork.image | default: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTI1IiBoZWlnaHQ9IjEyNSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTI1IiBoZWlnaHQ9IjEyNSIgZmlsbD0iI2ZmMDAwMCIvPjwvc3ZnPg==' }}"
+        alt="{{ artwork.title }}" /></a>
+  </div>
+  {% endfor %}
+</div>
+<footer class="clean">
+  {{ site.copyright }}
+</footer>

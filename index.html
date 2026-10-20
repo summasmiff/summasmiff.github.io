@@ -5,28 +5,29 @@ title: Home
 
 {% include top.html %}
 <!-- <img src="https://popsicle2014.files.wordpress.com/2014/07/snoop-dogg-gggggga721eb54a9-290x595x58.gif" class=""> -->
-<div id="post-list">
-	{% for post in paginator.posts %}
-	<div>
-		<a href="{{ post.url }}"><img class="post-img"
-				src="{{ post.image | default: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTI1IiBoZWlnaHQ9IjEyNSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTI1IiBoZWlnaHQ9IjEyNSIgZmlsbD0iI2ZmMDAwMCIvPjwvc3ZnPg==' }}"
-				alt="{{ post.title }}" /></a>
+
+<main class="home-intro">
+	<img src="/assets/images/headshot.jpg" alt="Summer Smith" class="headshot">
+	<div class="home-copy">
+		<h1>Summer Smith</h1>
+		<h2 class="subheading">Making beautiful things with code</h2>
+		<p>I'm a software engineer with 10+ years of experience making dashboards and visualizations for SaaS products.
+			I'm also a generative artist who uses a pen plotter to incorporate code into my art. Most recently, I was the Artist in Residence at the Living Arts and Science Center in Lexington, KY,
+		  where I pioneered a new workflow for creating paintings from code.</p>
 	</div>
-	{% endfor %}
-</div>
-<nav class="pagination" role="navigation">
-	{% if paginator.next_page %}
-	<a class="newer-posts" href="/page{{paginator.next_page}}">&larr; Older pieces</a>
-	{% endif %}
-	<span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-	{% if paginator.previous_page %}
-	{% if paginator.page == 2 %}
-	<a class="older-posts" href="/">Newer pieces &rarr;</a>
-	{% else %}
-	<a class="older-posts" href="/page{{paginator.previous_page}}">Newer pieces &rarr;</a>
-	{% endif %}
-	{% endif %}
-</nav>
+	<div class="posts">
+		{% for post in paginator.posts %}
+		<div class="post">
+			<a href="{{ post.url }}"><img class="post-img"
+        src="{{ post.image | default: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTI1IiBoZWlnaHQ9IjEyNSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTI1IiBoZWlnaHQ9IjEyNSIgZmlsbD0iI2ZmMDAwMCIvPjwvc3ZnPg==' }}"
+        alt="{{ post.title }}" /></a>
+			<h3>{{ post.title }}</h3>
+			<p>{{ post.quote }}</p>
+		</div>
+		{% endfor %}
+	</div>
+</main>
+
 <footer class="clean">
 	{{ site.copyright }}
 </footer>

@@ -4,37 +4,17 @@ article: true
 ---
 
 <header class="clean" style="height: 100%;">
-	{% include top.html %}
+	{% include sidebar.html %}
 	<div id="post-info">
-
-		<div class="hero-container">
-			{% if page.next %}
-			<a href="{{ page.next.url }}" class="nav-arrow next">&#9668;&#xFE0E;</a>
-			{% else %}
-			<div class="nav-arrow-placeholder"></div>
-			{% endif %}
-
-			{% if page.image %}
-			<img class="hero" src="{{ page.image }}" />
-			{% endif %}
-
-			{% if page.previous %}
-			<a href="{{ page.previous.url }}" class="nav-arrow prev">&#9658;&#xFE0E;</a>
-			{% else %}
-			<div class="nav-arrow-placeholder"></div>
-			{% endif %}
+		<h1 class="plotter-text">{{ page.title }}<hr /></h1>
+		<div class="post-content">
+			{{ content }}
 		</div>
-
-		<h1 class="plotter-text">{{ page.title }}</h1>
-		{% if page.quote %}
-		<h2 class="plotter-text">{{ page.quote }}</h2>
-		{% endif %}
-
-		<br />
+		<nav class="post-navigation" aria-label="Post navigation">
+			{% if page.previous %}<a href="{{ page.previous.url }}">Older: {{ page.previous.title }}</a>{% endif %}
+			{% if page.next %}<a href="{{ page.next.url }}">Newer: {{ page.next.title }}</a>{% endif %}
+		</nav>
 		<a class="site-title" href="{{ site.url }}"><img src="{{ site.icon }}" class="site-icon-small">{{ site.title }}</a>
-
 	</div>
 </header>
-<div class="content">
-	{{ content }}
-</div>
+

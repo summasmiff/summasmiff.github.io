@@ -56,6 +56,26 @@
 		display: block;
 	}
 
+	#top-menu {
+		display: none;
+		top: 60px;
+		right: auto;
+		left: 0;
+		width: 100%;
+		gap: 0;
+		padding: 12px 20px;
+		box-sizing: border-box;
+	}
+
+	#top-menu.open {
+		display: block;
+	}
+
+	#top-menu a {
+		display: block;
+		padding: 6px 0;
+	}
+
 	#post-list {
 		width: 280px;
 		grid-template-columns: repeat(2, 1fr);
@@ -84,18 +104,29 @@
 		width: 95% !important;
 	}
 
+	#article > h2 {
+		box-sizing: border-box;
+		padding: 10px 8px 4px;
+		margin-bottom: 6px;
+		line-height: 1.45;
+	}
+
+	#article > h2 hr {
+		margin: 0.5rem 0;
+	}
+
 	#post-info {
 		position: relative;
 		width: 100%;
 		margin-left: 0;
 		left: 0;
-		padding: 0 20px;
+		padding: 45px 20px 0;
 		box-sizing: border-box;
 	}
 
 	#post-info h1 {
-		font-size: 28px;
-		line-height: 28px;
+		font-size: 30px;
+		line-height: 1.4;
 	}
 
 	#post-info h2 {
